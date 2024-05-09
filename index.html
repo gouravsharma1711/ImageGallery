@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="shortcut icon" href="pngtree-gallery-vector-icon-png-image_1027754.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="popUpcss.css">
+</head>
+<body>
+    <!-- //autoplay controls loop -->
+    <!-- pop up start -->
+    <div class="featureTourContainer" id="featureTour">
+        
+        <div  class="middleBox" id="middleDiv">
+          <div class="toppContainer" id="TopContainer">
+              <video class="popupImg" id="popUpImage" src="intro.mp4" muted loop autoplay>
+          </div>
+          <div class="bottomContainer" id="BottomContainer">
+            <div class="descAndHead" id="descAndheading">
+              <h1 class="headingImageTour" id="headingImageTour">Welcome to Image Gallery</h1>
+              <p class="desc" id="Desc">
+                Welcome to our Image Gallery feature tour! Explore our collection
+                with ease as we guide you through its functionalities. Discover
+                how to navigate, view, and interact with images effortlessly.
+                Let's embark on this visual journey together!
+              </p>
+            </div>
+            <div class="featureTourButtons" id="ButtonOfFeatureTour">
+              <button class="b" id="b2">previous</button>
+              <button class="b" id="b1">Next</button>
+              <button class="b" id="popUp">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popupend -->
+    <div class="menu" id="mainMenuId">
+        <div class="logoAndTitle">
+            <div class="logodiv"><img class="Logo" src="pngtree-gallery-vector-icon-png-image_1027754.jpg" alt=""></div>
+            <p class="title">Image Gallery</p>
+        </div>
+        <div class="addMenuButton" id="NavButton">
+            
+            <button class="addImage" id="AddImageButton">Add Image</button>
+            <button class="addFolder" id="AddIFolderButton">Add Folder</button>
+        </div>
+        <div class="addModeButton" id="NavButton" style="padding-bottom: 1rem;">
+            <div class="modeToggleButton" id="toggleButton">
+                <div class="mode" id="darkMode"></div>
+                <h4 class="ModeLight">Light Mode</h4>
+                <h4 class="ModeDark">Dark Mode</h4>
+            </div>
+            
+        </div>
+        <div class="addImageButtonBlock" id="AdddImgButton">
+            <h3 class="headingFolderBlock">Add Image</h3>
+            <div class="NameOFFile">
+                <label for="Name">Name of file</label>
+                <input type="text" class="FileName" id="Name" placeholder="Enter the File Name">
+            </div>
+            <div class="urlBlock" id="URLblock">
+                <label for="url">Url</label>
+                <input type="text" class="URL" id="url" placeholder="Enter the Image url">
+            </div>
+            
+            <div class="imgNameBlock" id="ImgBlockBlock">
+                <label for="FolderName">Folder Name</label>
+                <input type="text" class="FOLDERNAME" id="FolderName" placeholder="Enter Folder Name">
+            </div>
+            <div class="twoButton">
+                <button class="AddImageButton" id="ADDImageButton">Add</button>
+                <button class="AddImageButton" id="cancelButton">Cancel</button>
+            </div>
+    
+        </div>
+
+        <div class="addFolderButtonBlock" id="AdddFolderButton">
+            <h3 class="headingFolderBlock">Add Folder</h3>
+            <div class="FolderNameText" id="FOLDERName">
+                <label for="url">Folder Name</label>
+                <input type="text" class="FolderNAME" id="FOLDERNAME" placeholder="Enter Folder Name">
+            </div>
+            <div class="twoButton">
+                
+                <button class="AddFolderButton" id="ADDFolderButton">Add</button>
+                <button class="AddFolderButton" id="CancelButton2">Cancel</button>
+                
+            </div>
+        </div>
+        <div class="allfolders"  id="ALLFOLDER">
+            <div class="folder" id="All">
+                <div class="imgFolder"><img class="FolderLeftSideImg" src="OneDrive_Folder_Icon.svg.png" alt=""></div>
+                <h3>Folders</h3>
+            </div>
+            <div class="folder" id="All">
+                <h3>All</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="lightbox" id="LightBox">
+        <div class="ImageBlockForLightBox">
+        </div>
+        <button class="CloseButtonForLightBox" id="LightBoxCloseButton">X</button>
+        <!-- <button class="prevNext" id="prevImg"></button>
+        <button class="prevNext" id="nextImg"></button> -->
+    </div>  
+
+
+    <div class="TopMostContainer">
+        <div class="topContainer">
+            <div class="TopContainerImage"><img class="topConatinerImgs" src="pngtree-gallery-vector-icon-png-image_1027754.jpg" alt=""></div>
+            <p class="NavHeading"> Image Gallery</p>
+        </div>
+        <nav class="navigation" id="nav">
+            <div class="slider" id="menu1"><img class="image" src="Hamburger.svg" alt=""></div>
+            <div class="searchbar" id="searchBar">
+                <input type="text" class="searchText" id="seacrhTextBar" placeholder="Search Image from file Name">
+                <button class="searchButton" id="search">Search</button>
+
+            </div>
+            
+            
+        </nav>    
+    </div>
+    <div class="mid" id="midBlock">
+    </div>
+
+    
+    
+    
+</body>
+<script src="darkLightMode.js"></script>
+<script src="addButton.js"></script>
+<script src="lighthouse.js"></script>
+<script src="FolderFilter.js"></script>
+<script src="popUp.js"></script>
+<script src="search.js"></script>
+<!-- <script src="dragging.js"></script> -->
+</html>

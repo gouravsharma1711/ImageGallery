@@ -1,0 +1,151 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 13rem;
+    height: 100vh;
+    padding:0px 20px;
+    /* backdrop-background-color: red; */
+    backdrop-filter: blur(20px);
+    z-index: 20;
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    transition: left 0.3s ease; 
+    box-shadow: 0 0 10px black;
+}
+.menu.active{
+    left: 0;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+.logoAndTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem ;
+}
+.logodiv{
+    border: 5px solid white;
+    border-radius: 50px;
+    height: 7rem;
+    width: 7rem;
+    background-color: white;
+}
+.Logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.menuslider{
+    width: 100%;
+    padding-top: 5.5rem;
+    display: flex;
+    justify-content: end;
+}
+.addFolder{
+    width: 5.4rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: orangered;
+    font-weight: 600;
+}
+.addFolderButtonBlock{
+    
+    padding: 1rem;
+    height: 10rem;
+    width: 10rem;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: none;
+}
+.FolderNAME{
+    width: 8rem;
+    height: 1.5rem;
+}
+.allfolders{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.addMenuButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+.AddFolderButton{
+    width: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size:small;
+    font-weight: 600;
+}
+.folder{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+    border: 1.8px solid black;
+    background-color: white;
+    cursor: pointer;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.newFolderDark{
+    background-color: black;
+    color: white;
+}
+.folder:hover{
+    background-color: rgb(255, 253, 208);
+}
+.FolderNameText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    gap: 0.5rem;
+}
+.imgFolder{
+    
+    height: 2rem;
+    width: 2rem;
+}
+
+.addFolder:hover{
+    background-color: #C04000;
+}
+
+.addFolderButtonBlock{
+    background-color: white;
+    color: black;
+}
+.newaddFolderButtonBlock{
+    background-color: #343434;
+    color: white;
+}
