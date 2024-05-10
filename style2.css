@@ -3,7 +3,7 @@
     top: 0;
     left: -300px; /* Initially hidden */
     width: 13rem;
-    height: 100vh;
+    height: 100%;
     padding:0px 20px;
     /* backdrop-background-color: red; */
     backdrop-filter: blur(20px);
