@@ -107,10 +107,12 @@ addFolderButton.addEventListener('click',()=>{
 
 let imageContainerMain=document.getElementById('midBlock');
 let mainMenuButton=document.getElementById("mainMenuId");
-let menuButtonOne=document.getElementById("menu1");
-menuButtonOne.addEventListener('click',()=>{
-    mainMenuButton.classList.toggle('active')
-    imageContainerMain.classList.toggle('active')
+let menuButtonOne=document.querySelectorAll("#menu1");
+menuButtonOne.forEach((element)=>{
+    element.addEventListener('click',()=>{
+        mainMenuButton.classList.toggle('active')
+        imageContainerMain.classList.toggle('active');
+    })
 })
 
 
