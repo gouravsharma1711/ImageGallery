@@ -101,6 +101,22 @@ body{
     outline: none;
     cursor: text;
 }
+@media screen and (max-width:394px) {
+    .searchbar{
+        height: 2rem;
+    }
+    
+    .searchText{
+        height: 2rem;
+        font-size: smaller;
+        
+    }
+    .searchButton{
+        height: 2rem;
+        font-size: smalle;
+    }
+
+}
 .addModeButton{
     display: flex;
     justify-content: center;
