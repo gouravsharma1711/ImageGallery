@@ -36,6 +36,13 @@
     width: 7rem;
     background-color: white;
 }
+.topmostConatinerMenu{
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    gap: 1rem;
+}
 .Logo{
     height: 100%;
     width: 100%;
