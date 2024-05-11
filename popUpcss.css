@@ -18,8 +18,7 @@
     align-items: center;
 }
 .middleBox {
-    /* border: 2px solid black; */
-    /* height: 80%; */
+    border:2px solid black;
     
     display: flex;
     flex-direction: column;
@@ -30,7 +29,6 @@
     background-color: white;
     padding-top: 1rem;
     border-radius: 10px;
-    box-shadow: 0 0 5rem #221f1f;
 }
 .toppContainer {
     max-height: 60%;
